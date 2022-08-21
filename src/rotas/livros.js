@@ -3,7 +3,7 @@ const rotas = express.Router()
 const livros = require('../controladores/livros')
 
 
-rotas.get("/", livros.cadastrarLivro)
-
+rotas.post("/", livros.adicionarLivro)
+rotas.get("/", livros.listarLivro)
 
 module.exports = rotas
